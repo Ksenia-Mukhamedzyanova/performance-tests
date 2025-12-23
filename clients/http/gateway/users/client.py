@@ -72,4 +72,4 @@ def build_users_gateway_http_client() -> UsersGatewayHTTPClient:
 
     :return: Готовый к использованию UsersGatewayHTTPClient.
     """
-    return  UsersGatewayHTTPClient(client=build_gateway_http_client())
+    return UsersGatewayHTTPClient(client=build_gateway_http_client())
