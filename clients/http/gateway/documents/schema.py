@@ -1,5 +1,6 @@
 from pydantic import BaseModel, HttpUrl
 
+
 class DocumentSchema(BaseModel):
     """
     Описание структуры документа.
@@ -7,11 +8,13 @@ class DocumentSchema(BaseModel):
     url: HttpUrl
     document: str
 
+
 class GetTariffDocumentResponseSchema(BaseModel):
     """
     Описание структуры ответа получения документа тарифа.
     """
     tariff: DocumentSchema
+
 
 class GetContractDocumentResponseSchema(BaseModel):
     """
